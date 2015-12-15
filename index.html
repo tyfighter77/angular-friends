@@ -17,12 +17,13 @@
     <form class="form-inline searchForm" role="form">
       <div class="form-group">
 
-        <input class="form-control" placeholder="Search Anything About Your Friends" ng-model="searchTerm"></input>
+        <!-- <input class="form-control" placeholder="Search Anything About Your Friends" ng-model="searchTerm"></input> -->
         <!-- STEP 5: Get rid of the one above when you uncomment the below-->
-        <!--
-        <input class="form-control" placeholder="Search Name">
-        <input class="form-control" placeholder="Search Location">
-          -->
+
+        <input class="form-control" placeholder="Search Name" ng-model="searchTerm.name"></input>
+        <input class="form-control" placeholder="Search Location" ng-model="searchTerm.current_location.name"></input>
+
+<br/>
 
         <select class="input-medium" ng-model="sortOn">
           <option value="name">Name</option>
